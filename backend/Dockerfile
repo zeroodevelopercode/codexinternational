@@ -1,6 +1,6 @@
 # Build stage
 # Opsi 2: Versi yang lebih baru (lebih aman jika ada dependency lain yang butuh versi tinggi)
-FROM rust:1.90-slim AS builder
+FROM rust:1.94.1-slim AS builder
 WORKDIR /app
 COPY . .
 RUN cargo build --release
